@@ -1,10 +1,10 @@
-package com.nvminh162.javaspringlaptopshop;
+package com.nvminh162.study;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JavaSpringLaptopshopApplicationTests {
+class JavaSpringStudyApplicationTests {
 
     @Test
     void contextLoads() {

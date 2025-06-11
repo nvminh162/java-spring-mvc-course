@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.nvminh162</groupId>
-    <artifactId>java-spring-laptopshop</artifactId>
+    <artifactId>study</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>java-spring-laptopshop</name>
-    <description>java-spring-laptopshop</description>
+    <name>java-spring-study</name>
+    <description>java-spring-study</description>
     <url/>
     <licenses>
         <license/>
