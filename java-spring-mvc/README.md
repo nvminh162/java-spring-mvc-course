@@ -1,4 +1,4 @@
-## Required Library @nvminh162 for Spring Security
+## Required Library @nvminh162 for Spring MVC
 
 To use Spring Boot's web features, add the following dependency to your `pom.xml`:
 
