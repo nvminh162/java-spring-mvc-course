@@ -2,10 +2,11 @@ package com.nvminh162.javaspringmvc.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.nvminh162.javaspringmvc.domain.User;
 import com.nvminh162.javaspringmvc.service.UserService;
 
 // Spring MVC Model
@@ -23,6 +24,19 @@ public class UserController {
         String test = this.userService.handleHello();
         model.addAttribute("test", test);
         model.addAttribute("test2", "From controller with model");
+        return "nvminh162";
+    }
+
+    @RequestMapping("/admin/user")
+    public String getUserPage(Model model) {
+        model.addAttribute("newUser", new User());
+        return "admin/user/create";
+    }
+
+    @RequestMapping(value = "/admin/user/create1", method = RequestMethod.POST)
+    public String createUserPage(Model model, @ModelAttribute("newUser") User nvminh162) {
+        // model.addAttribute("newUser", new User());
+        System.out.println("here ..." + nvminh162);
         return "nvminh162";
     }
 }
