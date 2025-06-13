@@ -57,6 +57,7 @@ To use Spring Boot's web features, add the following dependency to your `pom.xml
 </dependency>
 ```
 
+```xml
 <!-- tomcat-embed-jasper: Hỗ trợ JSP trong ứng dụng Spring Boot
     - Cho phép sử dụng JSP làm view technology trong Spring MVC
     - Thêm khả năng biên dịch các file JSP thành servlet
@@ -66,7 +67,8 @@ To use Spring Boot's web features, add the following dependency to your `pom.xml
     <groupId>org.apache.tomcat.embed</groupId>
     <artifactId>tomcat-embed-jasper</artifactId>
 </dependency>
-
+```
+```xml
 <!-- jakarta.servlet.jsp.jstl-api: API cho JSTL (JavaServer Pages Standard Tag Library)
     - Cung cấp các interface và annotation cho JSTL
     - Hỗ trợ phát triển JSP với các tag chuẩn (core, fmt, sql, xml, functions)
@@ -76,7 +78,9 @@ To use Spring Boot's web features, add the following dependency to your `pom.xml
     <groupId>jakarta.servlet.jsp.jstl</groupId>
     <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
 </dependency>
+```
 
+```xml
 <!-- jakarta.servlet.jsp.jstl: Implementation của JSTL cho Jakarta EE
     - Cung cấp triển khai cụ thể của các JSTL tags từ Glassfish
     - Làm việc với Jakarta EE 9+ và Jakarta Servlet 5.0+
@@ -86,3 +90,4 @@ To use Spring Boot's web features, add the following dependency to your `pom.xml
     <groupId>org.glassfish.web</groupId>
     <artifactId>jakarta.servlet.jsp.jstl</artifactId>
 </dependency>
+```
